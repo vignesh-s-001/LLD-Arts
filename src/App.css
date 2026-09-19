@@ -1,31 +1,85 @@
 .me-end .fw-bold{
     color: white;
-    
-    
-    
-    
 }
 
 #head{
-
     font-size: large;
     font-weight: bolder;
     border: 1px solid rgb(255, 255, 255);
     padding: 3px;
-   
 }
+
 .me-end:hover {
     cursor: pointer;
-    
 }
+
 .hor{
     padding: 6px;
 }
 
-
 .hor:hover{
     border: 1px solid white;
-    
-    
+}
 
+/* Dark Mode & Theme Transitions */
+body, .app-wrapper {
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-bs-theme="dark"] body,
+[data-bs-theme="dark"] .app-wrapper {
+    background-color: #121212;
+    color: #e9ecef;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #1e1e1e;
+    color: #f8f9fa;
+    border-color: #343a40 !important;
+}
+
+[data-bs-theme="dark"] .card-body {
+    background-color: #1e1e1e;
+}
+
+[data-bs-theme="dark"] .border-dark {
+    border-color: #495057 !important;
+}
+
+.theme-toggle-btn {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Poetry Card Styling */
+.poem-card {
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-left: 5px solid #0d6efd !important;
+}
+
+.poem-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.poem-text p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+}
+
+[data-bs-theme="dark"] .poem-card {
+    background-color: #1a1a1a;
+    border-color: #2d2d2d;
+    border-left-color: #0d6efd !important;
+}
+
+[data-bs-theme="dark"] .badge.bg-primary-subtle {
+    background-color: rgba(13, 110, 253, 0.2) !important;
+    color: #6ea8fe !important;
 }
