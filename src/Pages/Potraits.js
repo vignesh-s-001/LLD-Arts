@@ -21,6 +21,7 @@ const Potraits = () => {
         <Container fluid className='mt-5'>
           <Row className='justify-content-center g-4'>
             <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
+            <Col xs={12} sm={6} lg={4} className='d-flex justify-content-center'>
               <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
                 <Card.Img 
                   variant="top" 
@@ -38,6 +39,7 @@ const Potraits = () => {
             </Col>
             
             <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
+            <Col xs={12} sm={6} lg={4} className='d-flex justify-content-center'>
               <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
                 <Card.Img 
                   variant="top" 
@@ -55,6 +57,7 @@ const Potraits = () => {
             </Col>
 
             <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
+            <Col xs={12} sm={6} lg={4} className='d-flex justify-content-center'>
               <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
                 <Card.Img 
                   variant="top" 
