@@ -3,7 +3,6 @@ import { Container, Row, Col, Card, Button, Modal, Image } from 'react-bootstrap
 import pot1 from '../assets/mn.jpg';
 import pot2 from '../assets/sl.jpg';
 import pot3 from '../assets/ps.jpg';
-import pot4 from '../assets/sg.jpg';
 
 const Potraits = () => {
   const [showModal, setShowModal] = useState(false);
@@ -20,7 +19,6 @@ const Potraits = () => {
         <h3 className='text-center fw-bold mt-4'>  MY POTRAIT MODELS  </h3>
         <Container fluid className='mt-5'>
           <Row className='justify-content-center g-4'>
-            <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
             <Col xs={12} sm={6} lg={4} className='d-flex justify-content-center'>
               <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
                 <Card.Img 
@@ -32,13 +30,11 @@ const Potraits = () => {
                   onClick={() => handleImageClick(pot1)}
                 />
                 <Card.Body>
-                  <Card.Title> Rs.999.00 </Card.Title>
                   <Button variant="primary" className='w-100 fw-bold'>ORDER NOW</Button>
                 </Card.Body>
               </Card>
             </Col>
             
-            <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
             <Col xs={12} sm={6} lg={4} className='d-flex justify-content-center'>
               <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
                 <Card.Img 
@@ -50,13 +46,11 @@ const Potraits = () => {
                   onClick={() => handleImageClick(pot2)}
                 />
                 <Card.Body>
-                  <Card.Title> Rs.800.00 </Card.Title>
                   <Button variant="primary" className='w-100 fw-bold'>ORDER NOW</Button>
                 </Card.Body>
               </Card>
             </Col>
 
-            <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
             <Col xs={12} sm={6} lg={4} className='d-flex justify-content-center'>
               <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
                 <Card.Img 
@@ -68,24 +62,6 @@ const Potraits = () => {
                   onClick={() => handleImageClick(pot3)}
                 />
                 <Card.Body>
-                  <Card.Title> Rs.700.00 </Card.Title>
-                  <Button variant="primary" className='w-100 fw-bold'>ORDER NOW</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col xs={12} sm={6} lg={3} className='d-flex justify-content-center'>
-              <Card className='border-light text-center w-100' style={{ maxWidth: '350px' }}>
-                <Card.Img 
-                  variant="top" 
-                  src={pot4} 
-                  alt="Portrait model 4" 
-                  className='border border-5 border-dark mx-auto mt-3' 
-                  style={{ height: '400px', width: '90%', objectFit: 'cover', cursor: 'pointer' }} 
-                  onClick={() => handleImageClick(pot4)}
-                />
-                <Card.Body>
-                  <Card.Title> Rs.600.00 </Card.Title>
                   <Button variant="primary" className='w-100 fw-bold'>ORDER NOW</Button>
                 </Card.Body>
               </Card>
@@ -109,3 +85,4 @@ const Potraits = () => {
 }
 
 export default Potraits;
+
