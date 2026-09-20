@@ -7,6 +7,7 @@ import pot1 from './assets/mn.jpg';
 import pot2 from './assets/sl.jpg';
 import pot3 from './assets/ps.jpg';
 import Potraits from './Pages/Potraits';
+import Editing from './Pages/Editing';
 import Pricing from './Pages/Pricing';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
@@ -75,6 +76,9 @@ const Home = () => {
           <a href="#potraits" className="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold">
             <i className="bi bi-palette me-1"></i> Portraits
           </a>
+          <a href="#editing" className="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold">
+            <i className="bi bi-film me-1"></i> Editing
+          </a>
           <a href="#pricing" className="btn btn-outline-primary btn-sm rounded-pill px-3 fw-semibold">
             <i className="bi bi-tag me-1"></i> Pricing & Offers
           </a>
@@ -94,6 +98,14 @@ const Home = () => {
       <div className="home-sections mt-5">
         <section id="potraits" className="py-4">
           <Potraits />
+        </section>
+
+        <Container>
+          <hr className="my-5 opacity-25" />
+        </Container>
+
+        <section id="editing" className="py-4">
+          <Editing />
         </section>
 
         <Container>

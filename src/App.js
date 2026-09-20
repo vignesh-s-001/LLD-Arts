@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Pricing from './Pages/Pricing';
 import Potraits from './Pages/Potraits';
+import Editing from './Pages/Editing';
 import Contact from './Pages/Contact';
 import About from './Pages/About';
 import Poetry from './Pages/Poetry';
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/potraits' element={<div className='container pb-5 pt-3'><Potraits /></div>} />
+        <Route path='/editing' element={<div className='container pb-5 pt-3'><Editing /></div>} />
         <Route path='/pricing' element={<div className='container pb-5 pt-3'><Pricing /></div>} />
         <Route path='/poetry' element={<div className='container pb-5 pt-3'><Poetry /></div>} />
         <Route path='/contact' element={<div className='container pb-5 pt-3'><Contact /></div>} />

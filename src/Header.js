@@ -18,6 +18,7 @@ const Header = ({ theme, toggleTheme }) => {
           <Nav className="me-end me-md-5 align-items-center" id='hr'>
             <Nav.Item className='fw-bold ps-3 pe-3'><Link to="/" style={{ textDecoration: "none", color: 'white' }} className='hor'>HOME</Link></Nav.Item>
             <Nav.Item className='fw-bold first ps-3 pe-3'><Link to="/potraits" style={{ textDecoration: "none", color: 'white' }} className='hor'>POTRAITS</Link></Nav.Item>
+            <Nav.Item className='fw-bold ps-3 pe-3'><Link to="/editing" style={{ textDecoration: "none", color: 'white' }} className='hor'>EDITING</Link></Nav.Item>
             <Nav.Item className='fw-bold second ps-3 pe-3'><Link to='/pricing' style={{ textDecoration: "none", color: 'white' }} className='hor'>PRICING</Link></Nav.Item>
             <Nav.Item className='fw-bold ps-3 pe-3'><Link to="/poetry" style={{ textDecoration: "none", color: 'white' }} className='hor'>POETRY</Link></Nav.Item>
             <Nav.Item className='fw-bold ps-3 pe-3'><Link to="/contact" style={{ textDecoration: "none", color: 'white' }} className='hor'>CONTACT</Link></Nav.Item>
