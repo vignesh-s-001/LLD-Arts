@@ -3,6 +3,9 @@ import { Container, Carousel } from 'react-bootstrap';
 import car0 from './assets/car0.jpg';
 import car1 from './assets/car1.webp';
 import car2 from './assets/car2.jpg';
+import pot1 from './assets/mn.jpg';
+import pot2 from './assets/sl.jpg';
+import pot3 from './assets/ps.jpg';
 import Potraits from './Pages/Potraits';
 import Pricing from './Pages/Pricing';
 import About from './Pages/About';
@@ -21,36 +24,45 @@ const Home = () => {
       <Container className='mt-3'>
         <Carousel>
           <Carousel.Item>
-            <img
-              style={{ height: '500px', objectFit: 'cover', border: '15px solid black' }}
-              className='d-block w-100'
-              src={car0}
-              alt="Portrait Art"
-            />
+            <picture>
+              <source media="(max-width: 767px)" srcSet={pot1} />
+              <img
+                style={{ height: '500px', objectFit: 'cover', border: '15px solid black' }}
+                className='d-block w-100'
+                src={car0}
+                alt="Portrait Art"
+              />
+            </picture>
             <Carousel.Caption>
               <h3>Potrait Arts</h3>
               <p>Lets Watchout our page now.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              style={{ height: '500px', objectFit: 'cover', border: '15px solid black' }}
-              className='d-block w-100'
-              src={car1}
-              alt="Tattoo Art"
-            />
+            <picture>
+              <source media="(max-width: 767px)" srcSet={pot2} />
+              <img
+                style={{ height: '500px', objectFit: 'cover', border: '15px solid black' }}
+                className='d-block w-100'
+                src={car1}
+                alt="Tattoo Art"
+              />
+            </picture>
             <Carousel.Caption>
               <h3>Tattoo Arts</h3>
               <p>Lets Watchout our page now.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              style={{ height: '500px', objectFit: 'cover', border: '15px solid black' }}
-              className='d-block w-100'
-              src={car2}
-              alt="Board Art"
-            />
+            <picture>
+              <source media="(max-width: 767px)" srcSet={pot3} />
+              <img
+                style={{ height: '500px', objectFit: 'cover', border: '15px solid black' }}
+                className='d-block w-100'
+                src={car2}
+                alt="Board Art"
+              />
+            </picture>
             <Carousel.Caption>
               <h3>Board Arts</h3>
               <p>Lets Watchout our page now.</p>
